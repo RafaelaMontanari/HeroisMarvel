@@ -18,8 +18,8 @@ class HeroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let url = URL(string: hero.urls.first!.url)
+        //let url = URL(string: hero.urls.first(where: {$0.type == "wiki"})!.url)
         let request = URLRequest(url: url!)
         title = hero.name
         
